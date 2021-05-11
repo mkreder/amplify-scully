@@ -1,3 +1,3 @@
 # scully-docker
 
-Docker image to run [Scully](https://github.com/scullyio/scully).
+Docker image to run [Scully](https://github.com/scullyio/scully) on AWS Amplify.

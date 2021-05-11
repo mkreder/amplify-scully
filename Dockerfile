@@ -7,7 +7,10 @@ RUN apk add --no-cache \
       freetype-dev \
       harfbuzz \
       ca-certificates \
-      ttf-freefont
+      ttf-freefont \
+      git \
+      curl \
+      openssh
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 ENV SCULLY_PUPPETEER_EXECUTABLE_PATH /usr/bin/chromium-browser 
