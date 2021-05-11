@@ -15,7 +15,7 @@ RUN rm -rf /etc/apt/sources.list.d/google-chrome.list
 RUN apt-get update
 RUN apt-get install -y git curl openssh-server awscli
 
-RUN groupadd -r scully && useradd -r -g scully -G audio,video scully \
+RUN mkdir -p /node_modules && groupadd -r scully && useradd -r -g scully -G audio,video scully \
     && mkdir -p /home/scully/Downloads \
     && chown -R scully:scully /home/scully \
     && chown -R scully:scully /node_modules
