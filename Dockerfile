@@ -15,5 +15,5 @@ RUN rm -rf /etc/apt/sources.list.d/google-chrome.list
 RUN apt-get update
 RUN apt-get install -y git curl openssh-server awscli
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
-ENV SCULLY_PUPPETEER_EXECUTABLE_PATH /usr/bin/chrome 
+ENV SCULLY_PUPPETEER_EXECUTABLE_PATH /usr/bin/google-chrome 
 
